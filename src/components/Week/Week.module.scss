@@ -1,0 +1,117 @@
+$font-familyRoboto: 'Roboto', sans-serif;
+
+.weekWrapper{
+    background-color: #f9f9f9;
+    padding: 20px 200px;
+    display: flex;
+    justify-content: space-around;
+    .weekNumberWrapper{
+        display: flex;
+        gap: 15px;
+        .weekNumber{
+            font-size: 9px;
+        }
+    }
+}
+
+.weekCirclesWrapper{
+    display: flex;
+
+    .circleItem{
+        display: flex;
+        text-align: center;
+
+        &::after{
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 2px;
+            background-color: #b2c200;
+            position: relative;
+            top: 4px;
+        }
+
+        &:last-child::after{
+            display: none;
+        }
+
+        .circle{
+            display: block;
+            width: 10px;
+            height: 10px;
+            background-color: #b2c200;
+            border-radius: 50%;
+        }
+
+        &.greyItem .circle{
+            background-color: #dbdbdb;
+        }
+
+
+        &.greyItem::after, &.transparentItem::after{
+            background-color: #dbdbdb;
+        }
+
+        &.transparentItem .circle{
+            background-color: #fff;
+            border: 2px solid #dbdbdb;
+        }
+
+        &.transparentItem::before{
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 2px;
+            background-color: #dbdbdb;
+            position: relative;
+            top: 4px;
+            margin-left: -10px;
+        }
+
+        .number{
+            color: #828282;
+            font-size: 9px;
+            margin-top: 6px;
+        }
+
+    }
+}
+
+.sliderWrapper{
+    display: flex;
+    align-items: center;
+    gap:45px;
+    .weekTitle{
+        font-size: 48px;
+        font-family: $font-familyRoboto;
+        color: #ff801a;
+    }
+    .btnArrow{
+        background-color: transparent;
+        font-family: $font-familyRoboto;
+        padding: 13px 8px;
+        border: 2px solid #828282;
+        border-radius: 10px;
+    }
+    .arrowStyle {
+        height: 17px;
+        color: #838383;
+        height: 40px;
+    }
+}
+
+
+.optionTitle{
+    font-family: $font-familyRoboto;
+    color: #bdbdbd;
+    font-size: 9px;
+    margin-bottom: 13px;
+}
+.optionIconWrapper{
+    display: flex;
+    gap: 15px;
+    .iconOption{
+        object-fit: contain;
+    }
+}
+

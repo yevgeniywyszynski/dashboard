@@ -15,7 +15,7 @@ const Header = () => {
             <div className={styles.managerWrapper}>
                 <img src="images/managerimg.png" className={styles.managerImg} alt="manager"></img>
                 <p className={styles.managerName}>Olivia Wilde</p>
-                <FaChevronDown id="arrowDown"className={styles.arrowDown} />
+                <FaChevronDown className={styles.arrowDown} />
             </div>
         </div>
     )
