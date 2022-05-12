@@ -1,0 +1,36 @@
+$font-familyRoboto: 'Roboto', sans-serif;
+$colorNaviText: #7c7c7c;
+
+.headerWrapper{
+    padding: 20px 200px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    .navigationList{
+        display: flex;
+        gap: 30px;
+        .navigation{
+            font-family: $font-familyRoboto;
+            font-size: 15px;
+            color: $colorNaviText;
+        }
+        .navigation:hover{
+            color: #ff801a;
+        }
+    }
+
+    .managerWrapper{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .managerName{
+            font-family: $font-familyRoboto;
+            font-size: 15px;
+            color: $colorNaviText;
+        }
+        .arrowDown{
+            color: $colorNaviText;
+            font-size: 10px;
+        }
+    }
+}
